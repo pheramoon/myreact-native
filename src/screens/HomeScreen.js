@@ -8,19 +8,23 @@ const HomeScreen = ({navigation}) => {
   <Text style={styles.text}>Alift Prototype App</Text>
   <Button
   onPress={()=>navigation.navigate('Components')}
-  title="Page Demo 1" 
+  title="Page Demo" 
   />
   <Button 
   onPress={()=>navigation.navigate('List')}
-  title="List Demo 1"
+  title="List Demo"
   />
   <Button 
   onPress={()=>navigation.navigate('Image')}
-  title="Image Demo 1"
+  title="Image Demo"
   />
   <Button 
   onPress={()=>navigation.navigate('Counter')}
-  title="Counter Demo 1"
+  title="Counter Demo"
+  />
+  <Button 
+  onPress={()=>navigation.navigate('Color')}
+  title="Color Demo"
   />
   </View>
   );
