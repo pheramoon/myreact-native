@@ -2,13 +2,18 @@ import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 const CoutnerScreen=()=> {
+    
+    let counter=0;
+
     return (
     <View>
-        <Text>Current Count:</Text>
+        <Button title="Increase" onPress={()=> { counter++; }}/>
+        <Button title="Decrease" onPress={()=> { counter--; }}/>
+        <Text>Current Count: {counter}</Text>
     </View>
     );
 };
 
 const styles = StyleSheet.create({});
 
-export default CounterScreen;
+export default CoutnerScreen;
